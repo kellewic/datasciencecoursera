@@ -86,14 +86,14 @@ R Scripts
 ----
 This project breaks down each step into a separate R scripts and provides a "main" script for convenience to run all steps in sequence. All script use the working directory as returned by ``getwd()`` as the base for their file operations.
 
-##### run\_analysis.r
+##### run\_analysis.R
 This script runs each step in sequence. It assumes there is a "UCI HAR Dataset" directory (created from the original zip file) in the working directory from which it can read the files it requires. This directory can be created by sourcing the [1-download.r](1-download.r) script and calling the ``downloadZipFile()`` function.
 
 ##### 0-vars.r
-This script contains common code the other scripts need. It also keeps the global environment tidy by creating an environment and cleaning it. The [run\_analysis.r](run\_analysis.r) script uses this to ensure only the ``run_analysis()`` function and resulting data set remain in the global environment.
+This script contains common code the other scripts need. It also keeps the global environment tidy by creating an environment and cleaning it. The [run\_analysis.R](run\_analysis.R) script uses this to ensure only the ``run_analysis()`` function and resulting data set remain in the global environment.
 
 ##### 1-download.r
-This script downloads the original zip file and unzips it in the working directory should you want to start the analysis from scratch. The [run\_analaysis.r](run\_analysis.r) script does not use this - it assumes the source directory already exists.
+This script downloads the original zip file and unzips it in the working directory should you want to start the analysis from scratch. The [run\_analysis.R](run\_analysis.R) script does not use this - it assumes the source directory already exists.
 
 ##### 2-merge.r
 This script reads the test and training data files, merges each set of 3 files column-wise, and then appends the sets together.
