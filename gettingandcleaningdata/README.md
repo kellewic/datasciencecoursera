@@ -93,7 +93,7 @@ This script runs each step in sequence. It assumes there is a "UCI HAR Dataset" 
 This script contains common code the other scripts need. It also keeps the global environment tidy by creating an environment and cleaning it. The [run\_analysis.r](run\_analysis.r) script uses this to ensure only the ``run_analysis()`` function and resulting data set remain in the global environment.
 
 ##### 1-download.r
-This script downloads the original zip file and unzips it in the working directory should you want to start the analysis from scratch. The [run\_alaysis.r](run\_analysis.r) script does not use this - it assumes the source directory already exists.
+This script downloads the original zip file and unzips it in the working directory should you want to start the analysis from scratch. The [run\_analaysis.r](run\_analysis.r) script does not use this - it assumes the source directory already exists.
 
 ##### 2-merge.r
 This script reads the test and training data files, merges each set of 3 files column-wise, and then appends the sets together.
