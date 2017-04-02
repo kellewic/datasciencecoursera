@@ -75,7 +75,9 @@ This project produces data with 68 variables. The project's [CodeBook](CodeBook.
 Observations
 ----
 Train data set: 7,352
+
 Test data set: 2,947
+
 Total original: 10,299
 
 This project produces a data set with 180 observations, which are the mean of all measurements by subject and activity. Details on the measurements are in the project's [CodeBook](CodeBook.md).
@@ -97,10 +99,10 @@ This script downloads the original zip file and unzips it in the working directo
 This script reads the test and training data files, merges each set of 3 files column-wise, and then appends the sets together.
 
 ##### 3-extract.r
-This script reads the column indexes and names from [features.txt](features.txt), finds the rows with -mean() and -std() names and subsets the data set to just these measurements.
+This script reads the column indexes and names from 'features.txt', finds the rows with -mean() and -std() names and subsets the data set to just these measurements.
 
 ##### 4-activities.r
-This script renames the first two data set columns to "subjectid" and "activityid", reads the [activity\_labels.txt](activity\_labels.txt) file to a data frame, renames that frame's columns to "activityid" and "activity", and then merges the two datasets to get an activity for each row of the main data set. It then discards the "activityid" column and re-orders the remaining columns to: "subjectid", "activity", "measurement columns".
+This script renames the first two data set columns to "subjectid" and "activityid", reads the 'activity\_labels.txt' file to a data frame, renames that frame's columns to "activityid" and "activity", and then merges the two datasets to get an activity for each row of the main data set. It then discards the "activityid" column and re-orders the remaining columns to: "subjectid", "activity", "measurement columns".
 
 ##### 5-label.r
 This script renames the measurement columns to "meanOf-" + originalName (i.e. meanOf-tBodyAcc-mean()-X). We kept the original measurement variable name in order to match the data back up to the original data more easily to avoid confusion.
