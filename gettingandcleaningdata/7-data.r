@@ -4,7 +4,7 @@ writeData <- function(alldata, file=""){
         file <- paste0(c(getwd(), "output-data.txt"), collapse="/")
     }
     
-    write.table(alldata, file)
+    write.table(alldata, file, row.names = FALSE)
 }
 
 readData <- function(file=""){
@@ -17,5 +17,5 @@ readData <- function(file=""){
         file <- paste0(c(getwd(), "output-data.txt"), collapse="/")
     }
     
-    label(read.table(file))
+    label(read.table(file, header = TRUE))
 }
