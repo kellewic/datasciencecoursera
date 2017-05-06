@@ -38,13 +38,13 @@ When you are finished with the assignment, push your git repository to GitHub so
 The four plots that you will need to construct are shown below.
 
 #### Plot 1
-![Plot 1](figures/unnamed-chunk-2)
+![Plot 1](figures/unnamed-chunk-2.png)
 
 #### Plot 2
-![Plot 2](figures/unnamed-chunk-3)
+![Plot 2](figures/unnamed-chunk-3.png)
 
 #### Plot 3
-![Plot 3](figures/unnamed-chunk-4)
+![Plot 3](figures/unnamed-chunk-4.png)
 
 #### Plot 4
-![Plot 4](figures/unnamed-chunk-5)
+![Plot 4](figures/unnamed-chunk-5.png)
