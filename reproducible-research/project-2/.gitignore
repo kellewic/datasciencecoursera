@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+/main_cache/*
+StormData.csv
+StormData.csv.bz2
+/rsconnect/*
